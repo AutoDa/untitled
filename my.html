@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <link type="text/css" rel="stylesheet" href="style2.css" />
+    <script>
+    document.getElementById("button").onclick = function() {
+            document.getElementById("information").innerHTML = "<li>姓名 张三</li>
+        <li>性别 男</li>
+        <li>应聘职位 web前端工程师</li>";
+        }
+    </script>
 </head>
 <body>
 <div class="container">
 <div class="title">简历</div>
     <div class="content">
-<div class="title2">基本信息</div>
-    <ul>
+        <div class="title2"><button id="button">基本信息</button></div>
+    <ul id="infomation">
         <li>姓名 张三</li>
         <li>性别 男</li>
         <li>应聘职位 web前端工程师</li>
